@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\VirtualPetCare.Core\VirtualPetCare.Core.csproj" />
+  </ItemGroup>
+
 </Project>
