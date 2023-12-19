@@ -8,9 +8,8 @@ public interface IPetRepository
     Task<IEnumerable<Pet>> GetAllAsync();
     Task<Pet> GetByIdAsync(int id);
     Task<Pet> UpdateAsync(Pet pet);
-    Task<Pet> GetHealthStatusByIdAsync(int id);
+    Task<HealthStatus> GetHealthStatusByIdAsync(int id);
     Task<Pet> UpdateHealthStatusAsync(Pet pet);
-    Task<Pet> AddActivityAsync(Pet pet);
-    Task<Pet> GetActivityByIdAsync(int id);
+    Task<IEnumerable<Activity>> GetActivitiesByIdAsync(int id);
     Task<Pet> FeedAsync(Pet pet);
 }

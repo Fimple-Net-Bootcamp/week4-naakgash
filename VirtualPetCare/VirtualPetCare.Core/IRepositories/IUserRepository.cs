@@ -4,6 +4,6 @@ namespace VirtualPetCare.Core.IRepositories;
 
 public interface IUserRepository
 {
-    Task<User> InsertAsync(User user);
+    Task<User> CreateAsync(User user);
     Task<User> GetByIdAsync(int id);
 }
